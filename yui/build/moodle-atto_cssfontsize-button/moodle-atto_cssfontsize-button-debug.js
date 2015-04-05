@@ -92,13 +92,24 @@ OLD function that changed font tags below
     }
 
 Added a new function that adds a span tag below
-     */
+
 
     _changeStyle: function(e, size) {
         document.execCommand("insertHTML", false, '<span style="font-size:'+size+'">'+document.getSelection()+'</span>');
     }
 
+Changed the above function to one more inline with other formatting plugins fontcolor etc.
+*/
+
+    _changeStyle: function(e, size) {
+        this.get('host').formatSelectionInlineStyle({
+            fontSize: size
+        });
+      }
 });
+
+
+
 
 
 }, '@VERSION@');
