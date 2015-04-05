@@ -1,10 +1,14 @@
-Font Size plugin for Atto
+THIS PLUGIN IS NOT READY YET!!!
+DO NOT USE THIS PLUGIN!!!
+YOU HAVE BEEN WARNED!!!
+
+Font Size plugin for Atto using CSS
 =========================
 
 Requirements
 ============
 
-- Moodle 2.7
+- Moodle 2.7 or 2.8
 
 Installation
 ============
