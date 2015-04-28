@@ -35,29 +35,21 @@ YUI.add('moodle-atto_cssfontsize-button', function (Y, NAME) {
 
 var sizes = [
         {
-            value: 1,
             name: "xx-small"
         }, {
-            value: 2,
             name: "x-small"
         }, {
-            value: 3,
             name: "small"
         }, {
-            value: 4,
             name: "medium"
         }, {
-            value: 5,
             name: "large"
         }, {
-            value: 6,
             name: "x-large"
         }, {
-            value: 7,
             name: "xx-large"
         }
     ];
-/* Changed the array to allow size names that are consistent with CSS output */
 Y.namespace('M.atto_cssfontsize').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
     initializer: function() {
         var items = [];
@@ -86,20 +78,7 @@ Y.namespace('M.atto_cssfontsize').Button = Y.Base.create('button', Y.M.editor_at
      * @param {EventFacade} e
      * @param {string} size The new font size
      * @private
-OLD function that changed font tags below
-    _changeStyle: function(e, size) {
-        document.execCommand("fontSize", false, size);
-    }
-
-Added a new function that adds a span tag below
-
-
-    _changeStyle: function(e, size) {
-        document.execCommand("insertHTML", false, '<span style="font-size:'+size+'">'+document.getSelection()+'</span>');
-    }
-
-Changed the above function to one more inline with other formatting plugins fontcolor etc.
-*/
+     */
 
     _changeStyle: function(e, size) {
         this.get('host').formatSelectionInlineStyle({
@@ -107,9 +86,6 @@ Changed the above function to one more inline with other formatting plugins font
         });
       }
 });
-
-
-
 
 
 }, '@VERSION@');

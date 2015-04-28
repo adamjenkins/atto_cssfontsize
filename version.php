@@ -24,8 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015040502;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2015042801;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2014050800;        // Requires this Moodle version.
 $plugin->component = 'atto_cssfontsize';   // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '2.8 (Build 2015040502)';
+$plugin->release = '2.8 (Build 2015042801)';
